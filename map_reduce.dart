@@ -1,5 +1,7 @@
 main() {
   Map mapa = {};
-  //Function fn = (int a);
+  bool Function(double) fn;
+
+  //criar class Pessoa
   print(mapa);
 }
