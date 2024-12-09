@@ -9,13 +9,13 @@ main() {
   }
   print(notasBoas);
   print('-----------');
-  /*var melhorNota = notas.elementAt(0);
+  var melhorNota = notas.elementAt(0);
 
   for (int cont = 0; cont < notas.length; cont++) {
     if (notas.elementAt(cont) > melhorNota) {
       melhorNota = notas.elementAt(cont);
     }
-  }*/
+  }
 
-  (print('A melhor nota foi: $melhorNota'));
+  print('A melhor nota foi: $melhorNota');
 }
