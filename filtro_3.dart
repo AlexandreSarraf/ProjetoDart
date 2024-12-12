@@ -22,7 +22,7 @@ main() {
     return nome.length >= 5;
   }; /*recebe nome tipo String, retorna nome.length maior ou igual a 5*/
 
-  var nomesGrandes = filtrar<String>(nomes, boasNotasFn);
+  var nomesGrandes = filtrar<String>(nomes, nomesGrandesFn);
   //print(filtrar(nomes, nomesGrandesFn));
 
   print(nomesGrandes);
