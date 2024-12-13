@@ -12,5 +12,6 @@ void main() {
       .map((aluno) => aluno['nota'])
       .map((nota) => (nota as double))
       .reduce((t, a) => t + a);
+
   print(total);
 }
