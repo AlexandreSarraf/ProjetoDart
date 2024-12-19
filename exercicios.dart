@@ -1,5 +1,5 @@
 main() {
-  Map<String, double> notasDosAlunos = {
+  Map<String, double> notasDosAlunos = const {
     'Ana': 9.1,
     'Bia': 8.1,
     'Carl': 7.1,
