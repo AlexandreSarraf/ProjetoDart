@@ -1,10 +1,10 @@
 class Data {
   int dia = 1;
   int mes = 1;
-  int ano;
+  int? ano;
 
   Data([this.dia = 1, this.mes = 1, this.ano = 2000]);
-  Data.ultimoDia(this.ano) {
+  Data.ultimoDia({this.ano}) {
     dia = 31;
     mes = 12;
   }
@@ -18,6 +18,11 @@ class Data {
   String toString() {
     return "$dia/$mes/$ano";
   }
+}
+
+class Carro {
+  String? marca;
+  int? ano;
 }
 
 main() {
