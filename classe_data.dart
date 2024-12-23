@@ -1,34 +1,43 @@
 class Data {
-  int? dia;
-  int? mes;
-  int? ano;
+  int dia;
+  int mes;
+  int ano;
 
-  String obterFormatada() {
-    return "$dia/$mes/$ano";
-  }
+  Data(this.dia, this.mes, this.ano);
+
+  /*Data(int diaInicial,  mesInicial,  anoInicial) {
+    dia = diaInicial;
+    mes = mesInicial;
+    ano = anoInicial;
+  }*/
 
   String toString() {
-    return obterFormatada();
+    return "$dia/$mes/$ano";
   }
 }
 
 main() {
-  var dataAniversario = new Data();
-  dataAniversario.dia = 28;
+  var dataAniversario = new Data(28, 12, 2024);
+  //var dataAniversario = Data(28, 12, 2024); sem new
+  /*dataAniversario.dia = 28;
   dataAniversario.mes = 12;
-  dataAniversario.ano = 2024;
+  dataAniversario.ano = 2024;*/
 
-  var dataCompra = Data();
-  dataCompra.dia = 19;
-  dataCompra.mes = 12;
-  dataCompra.ano = 2024;
+  Data dataHj = Data(20, 12, 2024);
+  /*dataHj.dia = 20;
+  dataHj.mes = 12;
+  dataHj.ano = 2024;*/
 
-  Data d2 = dataCompra;
-  String s2 = dataCompra.toString();
+  Data d2 = dataHj;
+  String s2 = dataHj.toString();
+  var d1 = dataAniversario;
+  var s1 = dataAniversario;
 
-  //print("${dataAniversario.dia}/${dataAniversario.mes}/${dataAniversario.ano}");
+  print("${dataAniversario.dia}/${dataAniversario.mes}/${dataAniversario.ano}");
   print(dataAniversario);
-  print(dataCompra);
-  print(d2.toString());
+  //print(dataHj);
+  print(d2);
+  print(s1);
   print(s2);
+  print(d1);
 }
