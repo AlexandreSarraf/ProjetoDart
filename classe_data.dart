@@ -1,9 +1,13 @@
 class Data {
-  int dia;
-  int mes;
+  int dia = 1;
+  int mes = 1;
   int ano;
 
-  Data(this.dia, this.mes, this.ano);
+  Data([this.dia = 1, this.mes = 1, this.ano = 2000]);
+  Data.ultimoDia(this.ano) {
+    dia = 31;
+    mes = 12;
+  }
 
   /*Data(int diaInicial,  mesInicial,  anoInicial) {
     dia = diaInicial;
