@@ -2,7 +2,7 @@ class Pessoa {
   // Atributos ou variáveis de instância
   String? nome;
   int? idade;
-  String? _sobrenome; // Variável privada
+  var _sobrenome; // Variável privada
 
   // Construtor
   Pessoa(this.nome, this.idade);
@@ -37,7 +37,7 @@ class Pessoa {
 
 void main() {
   var pessoa1 = Pessoa('Alice', 25);
-  pessoa1.saudacao(); // Chama método estático
+  Pessoa.saudacao(); // Chama método estático
   pessoa1.mostrarDados();
 
   var pessoa2 = Pessoa.completo('Carlos', 30, 'Silva');
