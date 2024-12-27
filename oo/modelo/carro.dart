@@ -1,11 +1,11 @@
 class Carro {
-  final int _velocidadeMaxima;
-  int velocidadeAtual = 0;
+  final int velocidadeMaxima;
+  int _velocidadeAtual = 0;
 
-  Carro([this._velocidadeMaxima = 200]);
+  Carro([this.velocidadeMaxima = 200]);
 
   bool estaNoLimite(int velocidade) {
-    if (velocidadeAtual +5 >= _velocidadeMaxima) {
+    if (_velocidadeAtual + 5 >= velocidadeMaxima) {
       return true;
     } else {
       return false;
@@ -15,18 +15,18 @@ class Carro {
   int acelerar() {
     //var testeVel = estaNoLimite();
 
-    if () {
-      return _velocidadeMaxima;
+    if (_velocidadeAtual + 5 >= velocidadeMaxima) {
+      return velocidadeMaxima;
     } else {
-      return velocidadeAtual + 5;
+      return _velocidadeAtual + 5;
     }
   }
 
   int frear() {
-    if (velocidadeAtual -5 <= 0) {
+    if (_velocidadeAtual - 5 <= 0) {
       return 0;
-    }else{
-      return velocidadeAtual - 5;
+    } else {
+      return _velocidadeAtual - 5;
     }
   }
 }
