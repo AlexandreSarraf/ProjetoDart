@@ -4,6 +4,14 @@ class Carro {
 
   Carro([this.velocidadeMaxima = 200]);
 
+  int get velocidadeAtual {
+    return this._velocidadeAtual;
+  }
+
+  void set velocidadeAtual(int novaVelocidade) {
+    this._velocidadeAtual = novaVelocidade;
+  }
+
   bool estaNoLimite(int velocidade) {
     if (_velocidadeAtual + 5 >= velocidadeMaxima) {
       return true;
