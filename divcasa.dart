@@ -16,7 +16,7 @@ void main() {
   double percentAmor = 0.3134;
   double percentTarcisio = 0.3133;
   double percentThiago = 0.3133;
-  double percentMontanteThiago = 3 / 100;
+  double percentMontanteThiago = 0.03;
 
   // Cálculos
   double valorLiber = (total * percentLiber);
@@ -29,9 +29,10 @@ void main() {
 
   // Exibição dos resultados
   print("Total: $total");
-  print("Líber ($percentLiber%): $valorLiber");
-  print("Amor ($percentAmor%): $valorAmor");
-  print("Tarcísio ($percentTarcisio%): $valorTarcisio");
-  print("Thiago ($percentThiago%): $valorThiago");
+  print("Líber ($percentLiber%): ${valorLiber.toStringAsFixed(2)}");
+  print('${valorLiber.toStringAsFixed(2)}');
+  print("Amor ($percentAmor%): ${valorAmor.toStringAsFixed(2)}");
+  print("Tarcísio ($percentTarcisio%): ${valorTarcisio.toStringAsFixed(2)}");
+  print("Thiago ($percentThiago%): ${valorThiago.toStringAsFixed(2)}");
   print("3% do montante de Thiago($percentMontanteThiago%): $montanteThiago");
 }
