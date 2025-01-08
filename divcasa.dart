@@ -30,7 +30,6 @@ void main() {
   // Exibição dos resultados
   print("Total: $total");
   print("Líber ($percentLiber%): ${valorLiber.toStringAsFixed(2)}");
-  print('${valorLiber.toStringAsFixed(2)}');
   print("Amor ($percentAmor%): ${valorAmor.toStringAsFixed(2)}");
   print("Tarcísio ($percentTarcisio%): ${valorTarcisio.toStringAsFixed(2)}");
   print("Thiago ($percentThiago%): ${valorThiago.toStringAsFixed(2)}");
