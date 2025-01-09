@@ -9,7 +9,10 @@ class Carro {
   }
 
   void set velocidadeAtual(int novaVelocidade) {
-    this._velocidadeAtual = novaVelocidade;
+    bool deltaValido = (_velocidadeAtual - novaVelocidade).abs() <= 5;
+    if (deltaValido) {
+      this._velocidadeAtual = novaVelocidade;
+    }
   }
 
   bool estaNoLimite(int velocidade) {
