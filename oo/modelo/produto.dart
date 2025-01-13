@@ -12,8 +12,13 @@ class Produto {
     }
     return 0;
   }
+
+  void Mostrar() {
+    print("");
+  }
 }
 
 main() {
-  var produto = Produto(nome: "Notebook", preco: 3500, desconto: 0.1);
+  var produto1 = Produto(nome: "Notebook", preco: 3500, desconto: 0.1);
+  print(produto1.nome);
 }
