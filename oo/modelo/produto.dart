@@ -2,11 +2,11 @@ class Produto {
   int? codigo;
   String? nome;
   num? preco;
-  num? desconto;
+  double? desconto;
 
   Produto({this.codigo, this.nome, this.preco, this.desconto = 0});
 
-  num? get precoComDesconto {
+  double? get precoComDesconto {
     if (preco != null && desconto != null) {
       return (1 - desconto!) * preco!;
     }
