@@ -13,4 +13,10 @@ class VendaItem {
     }
     return _preco;
   }
+
+  void set preco(double novoPreco) {
+    if (novoPreco > 0) {
+      _preco = novoPreco;
+    }
+  }
 }
